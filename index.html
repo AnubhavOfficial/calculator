@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <center>
+      <div class="outerDiv">
+        <div class="textfield">
+          <input type="text" placeholder="0" class="fieldClass" id="text" />
+        </div>
+        <div class="innerDiv">
+          <div class="numbers">
+            <div class="row">
+              <button class="btn" onclick="clearClicked()">C</button>
+              <button class="btn hide">C</button>
+              <button class="btn" onclick="eraseClicked()">
+                <img src="clear.png" alt="" class="clearIcon" />
+              </button>
+            </div>
+            <div class="row">
+              <button class="btn" onclick="numberClicked(7)">7</button>
+              <button class="btn" onclick="numberClicked(8)">8</button>
+              <button class="btn" onclick="numberClicked(9)">9</button>
+            </div>
+            <div class="row">
+              <button class="btn" onclick="numberClicked(4)">4</button>
+              <button class="btn" onclick="numberClicked(5)">5</button>
+              <button class="btn" onclick="numberClicked(6)">6</button>
+            </div>
+            <div class="row">
+              <button class="btn" onclick="numberClicked(1)">1</button>
+              <button class="btn" onclick="numberClicked(2)">2</button>
+              <button class="btn" onclick="numberClicked(3)">3</button>
+            </div>
+            <div class="row">
+              <button class="btn zero" onclick="numberClicked(0)">0</button>
+              <button class="btn" onclick="numberClicked('.')">.</button>
+            </div>
+          </div>
+          <div class="functions">
+            <button class="funcBtn btn" onclick="numberClicked('/')">÷</button>
+            <button class="funcBtn btn" onclick="numberClicked('*')">×</button>
+            <button class="funcBtn btn" onclick="numberClicked('-')">−</button>
+            <button class="funcBtn btn" onclick="numberClicked('+')">+</button>
+            <button class="funcBtn btn" onclick="totalClicked()">=</button>
+          </div>
+        </div>
+      </div>
+      <div id="result"></div>
+    </center>
+  </body>
+  <script src="app.js"></script>
+</html>
